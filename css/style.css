@@ -24,7 +24,7 @@ img {
 
 .game__title {
     font-weight: 800;
-    color: #F9FAF9;
+    color: #B0BAB1;
 }
 
 .gameboard {
@@ -34,15 +34,17 @@ img {
 }
 
 .game__wrapper {
-    background-color: #B0BAB1;
+    background-color: #963025;
     padding: 20px  40px 40px;
     border-radius: 10px;
+    position: relative;
 }
 
 .game__scoreboard {
     display: flex;
     justify-content: space-between;
     font-size: 1.25rem;
+    color: #F9FAF9;
 }
 
 @media screen and (max-width: 550px) {
