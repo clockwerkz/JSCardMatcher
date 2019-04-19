@@ -48,6 +48,51 @@ img {
     color: #F9FAF9;
 }
 
+
+.modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.863);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.hide {
+    display: none;
+}
+
+.modal__wrapper {
+    width: 500px;
+    height: 400px;
+    background-color: #8FABAC;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal__subheading {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+
+.modal__score, .modal__timer {
+    font-size: 1.5rem;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #202528;
+    color: #F9FAF9;
+}
+
 @media screen and (max-width: 550px) {
     .game__wrapper {
         width: 420px;
