@@ -23,9 +23,13 @@ cards.forEach(function(card){
             reshuffleCards();
             score++;
             updateScore(score);
+            if (score === 16) {
+                //Win Codition
+                gameOver('Nice Job! You Win!')
+            }
         } else {
             //Game over
-            gameOver();
+            gameOver('Sorry, you lost!');
         }
     });
 });
@@ -37,7 +41,9 @@ modalBtn.addEventListener('click', resetGame);
 
 /* functions */
 
-function gameOver() {
+function gameOver(text) {
+    gameOverText = document.querySelector('.modal__subheading');
+    gameOverText.textContent = text;
     openModal();
     stopTimer();
     clickedCards = [];
